@@ -1,0 +1,8 @@
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\WebScraper.dll
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\WebScraper.pdb
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\HtmlAgilityPack.dll
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\HtmlAgilityPack.xml
+C:\Users\jd\Desktop\BookScraper\WebScraper\obj\Debug\WebScraper.dll
+C:\Users\jd\Desktop\BookScraper\WebScraper\obj\Debug\WebScraper.pdb
+C:\Users\jd\Desktop\BookScraper\WebScraper\obj\Debug\WebScraper.csprojResolveAssemblyReference.cache

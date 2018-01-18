@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BattleThroughHeavens1" xml:space="preserve">
+    <value>&lt;div id="content" class="site-content" role="main"&gt;
+
+		
+			&lt;article id="post-130" class="post-130 post type-post status-publish format-standard hentry category-translations tag-dou-po-cang-qiong tag-doupo-cangqiong tag-doupocangqiong tag-translated tag-xiao-mei tag-xiao-xun-er tag-xiao-yan"&gt;
+	&lt;header class="entry-header"&gt;
+				&lt;h1 class="entry-title"&gt;Dou Po Cang Qiong Chapter&amp;nbsp;1&lt;/h1&gt;	&lt;/header&gt;&lt;!-- .entry-header --&gt;
+
+	&lt;div class="entry-content"&gt;
+		&lt;p&gt;Chapter 1 Genius No More&lt;/p&gt;
+&lt;p&gt;&amp;#8216;Dou Zhi Li&lt;sup id="fnref-130-1"&gt;&lt;a href="#fn-130-1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, 3rd stage!&amp;#8217;&lt;/p&gt;
+&lt;p&gt;Facing the Magical Testing Monument as it displayed the 5 big hurtful words, the youth stood expressionless, lips curled in a small self-ridiculing smile. He tightly clenched his fist and because of the strength used, his slightly sharp fingernails dug deep into the palm of his hand, bringing brief moments of pain.&lt;span id="more-130"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Xiao Yan, Dou Zhi Li, 3rd stage! Rank: Low!&amp;#8221; Beside the Magical Testing Monument, a middle-aged man looked at the results on the monument and announced them with an indifferent voice.&lt;/p&gt;
+&lt;p&gt;Immediately after the middle-aged man finished speaking, without much surprise, the people in the square started a commotion, ridiculing him.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;3rd stage? Hmmhmm, as expected. This &amp;#8216;genius&amp;#8217; has once again taken a step back.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Ai, this piece of trash really disgraced his entire clan.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;If his father wasn&amp;#8217;t the clan leader, this kind of trash would already have been kicked out of the clan. Nobody would care about him, and there wouldn&amp;#8217;t be such a thing as leeching off the clan home.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;How could the once famous genius of Wu Tan Cheng&lt;sup id="fnref-130-2"&gt;&lt;a href="#fn-130-2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; fall to become like this over the past few years?&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Who knows? Maybe he did something unforgivable and caused the gods to get angry.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;The ridicule and laughter directed at him came from all directions and resonated in the motionless youth&amp;#8217;s ears, as if piercing his heart. He could not help but breathe heavily.&lt;/p&gt;
+&lt;p&gt;He raised his head to reveal a delicate and immature face, jet black eyes glancing past the people of his age that ridiculed him as well. His lips, which were previously full of self-ridicule, turned to fill with bitterness instead.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;These people, were they always this cold? Or was it because three years ago they smiled humbly to congratulate me, and now they wanted to take it back?&amp;#8221; Smiling bitterly, Xiao Yan turned around and silently walked back to the group of people. His lonesome figure seemed to be unable to fit in with the surroundings.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Next up, Xiao Mei!&amp;#8221;&lt;/p&gt;
+&lt;p&gt;Hearing the tester&amp;#8217;s voice, a teenage girl quickly ran up from in the crowd. The moment she got on stage, the murmurings and discussions quietened down and every pair of fiery eyes were locked on her face.&lt;/p&gt;
+&lt;p&gt;The teenage girl wasn&amp;#8217;t more than 14 years old. Although her beauty wasn&amp;#8217;t immediately evident, her small childish face combined with her innocence captured the attention of the audience.&lt;/p&gt;
+&lt;p&gt;She quickly stepped forward and put her tiny hands on the black stone monument. She then closed her eyes gently.&lt;/p&gt;
+&lt;p&gt;As the girl closed her eyes, the monument shined brightly once again.&lt;/p&gt;
+&lt;p&gt;&amp;#8216;Dou Zhi Li, 7th stage!&amp;#8217;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Xiao Mei, Dou Zhi Li, 7th stage! Rank: High!&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Yeh!&amp;#8221; Hearing the tester read out the result, the teen girl smiled proudly.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Tsk tsk, 7th stage Dou Zhi Li. How impressive! At this rate, in three years she&amp;#8217;ll be named a true Dou Zhe&lt;sup id="fnref-130-3"&gt;&lt;a href="#fn-130-3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt; already.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;She really fits the name of the clan&amp;#8217;s seedling.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;Hearing the unanimous praise coming from the crowd, the girl&amp;#8217;s smile turned even wider. Vanity, the temptation that so many girls are unable to resist&amp;#8230;&lt;/p&gt;
+&lt;p&gt;While chatting with her fellow sister members, her line of sight weaved through the surrounding people and landed on a lonesome figure away from them.&lt;/p&gt;
+&lt;p&gt;Furrowing her brows for a while, she finally decided against walking over. Between the two of them was already a huge gap. Looking at Xiao Yan&amp;#8217;s performance these past few years, by the time the Adulthood Ceremony comes, he would only be able to place at the lower tier clan member ranks. She, however, with her brilliance, would become the clan&amp;#8217;s very important and thus well-nurtured fighter. There would be no limit to her future.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Ai&amp;#8230;&amp;#8221; An inexplicable sigh emerged from her. Xiao Mei thought back to the youth from three years ago, bursting with energy and pride. At 4 he started practicing, and at 10 he achieved the 9th stage Dou Zhi Li. At 11 he broke the 10th stage Dou Zhi Li barrier and condensed his Dou Zhi Qi Zu&lt;sup id="fnref-130-4"&gt;&lt;a href="#fn-130-4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt; successfully. He became the youngest Dou Zhe in the clan since the past 100 years.&lt;/p&gt;
+&lt;p&gt;At that time, his self-confidence as well as immeasurable power attracted countless young teens which of course, included Xiao Mei.&lt;/p&gt;
+&lt;p&gt;However, the path of a genius was always winding. Three years ago, this genius youngster whose fame reached the absolute top, received what could possibly be the cruelest blow. The hard work he put into acculmulating and condensing the Dou Zhi Qi Zu over the past ten years had, in just one night, vanished into nothingness. All the Dou Zhi Li in his body slowly dissipated with time and instead, pity for him grew.&lt;/p&gt;
+&lt;p&gt;As a result of losing his Dou Zhi Li, his physical strength decreased as well.&lt;/p&gt;
+&lt;p&gt;From the position of a genius, in one night he fell below the average person. This kind of blow made the youth lose his will to carry on training. The reverence once associated with this lad had slowly changed into disdain and ridicule.&lt;/p&gt;
+&lt;p&gt;Standing so high up, and falling right down &amp;#8211; this kind of fall might just be one that he could never recover from.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Next, Xiao Xun Er!&amp;#8221;&lt;/p&gt;
+&lt;p&gt;Among the commotion, the tester&amp;#8217;s voice sounded yet again.&lt;/p&gt;
+&lt;p&gt;Following the calling of this highly reputable name, the group of people quietened down immediately. Every single gaze turned.&lt;/p&gt;
+&lt;p&gt;At the centerpoint of attention was a teen girl clad in a purple dress, elegantly standing there. Her calm, tender and immaculate face was completely unaffected by the many gazes of the crowd.&lt;/p&gt;
+&lt;p&gt;Her calm and indifferent attitude could be compared to the blooming of a lotus. At such a young age, she already had the air of a refined lady. It would be hard to imagine how she would affect the city and the nation once she grew up.&lt;/p&gt;
+&lt;p&gt;This purple dress girl, if compared to Xiao Mei in terms of beauty, was clearly several leagues above. It&amp;#8217;s no wonder the crowd would have this kind of actions.&lt;/p&gt;
+&lt;p&gt;Taking small, graceful steps, the girl named Xiao Xun Er walked up in front of the stone monument. She stretched her small hand out and the purple sleeve mixed with black and gold threads fell down her arm, revealing a delicate snow-white wrist. She touched the monument lightly.&lt;/p&gt;
+&lt;p&gt;In the silence, the monument shone once more.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Dou Zhi Li, 9th stage! Rank: High!&amp;#8221;&lt;/p&gt;
+&lt;p&gt;Looking at the words on the monument, the entire square fell into deep silence.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;&amp;#8230;&amp;#8230; She really reached the 9th stage, how frightening! The position of the youngest high rank in the clan has been taken, without a shred of doubt, by Miss Xun Er!&amp;#8221; After the silence, several teens couldn&amp;#8217;t help but wolf whistle, their eyes full of respect and awe.&lt;/p&gt;
+&lt;p&gt;Dou Zhi Li was essential towards being a Dou Zhe. Dou Zhi Li is split into 10 different stages, and when the body acquires 10 stages of Dou Zhi Li, it can better condense the Dou Zhi Qi Zu, becoming a well-respected Dou Zhe!&lt;/p&gt;
+&lt;p&gt;In the crowd of people, Xiao Mei stared at the purple dress girl in front of the monument with a little jealousy.&lt;/p&gt;
+&lt;p&gt;Looking at the results on the monument, the middle-aged tester who would normally be indifferent smiled, faced her and congratulated her: &amp;#8220;Miss Xun Er, half a year later, you should be able to condense the Dou Qi Zhi Zu&lt;sup id="fnref-130-5"&gt;&lt;a href="#fn-130-5" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt;. If you succeed, you&amp;#8217;ll be a Dou Zhe at the age of 14, the second person to do so in the Xiao clan.&lt;/p&gt;
+&lt;p&gt;Of course, the second person. First would be the fallen genius, Xiao Yan.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Thanks.&amp;#8221; The teen girl nodded her head lightly, her calm face showing a little happiness because of his praise. She quietly turned, and in the midst of the crowd&amp;#8217;s attention, slowly walked to the downtrodden youth in the back of the group.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Brother Xiao Yan.&amp;#8221; At the youth&amp;#8217;s side, the teen girl stopped. She faced Xiao Yan and bowed respectfully. Her beautiful and gentle face showed a elegant smile which would make the surrounding girls jealous.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;What qualifications do I have right now for you to call me that?&amp;#8221; He faced the girl that could be considered the clan&amp;#8217;s radiant pearl and said bitterly. She, after being down-hearted for an extremely short while, continued to maintain her respect.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Brother Xiao Yan, you once said to Xun Er&lt;sup id="fnref-130-6"&gt;&lt;a href="#fn-130-6" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt; before &amp;#8211; to take on anything, one must first be able to let go. One is only truly free when he can take on and let go easily&lt;sup id="fnref-130-7"&gt;&lt;a href="#fn-130-7" rel="footnote"&gt;7&lt;/a&gt;&lt;/sup&gt;.&amp;#8221; Xiao Xun Er said gently, her smiling face full of warmth.&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Haha, truly free? I only know how to say it. Look at me now, do I look like a free person? This world wasn&amp;#8217;t mine to begin with.&amp;#8221; Xiao Yan laughed at himself, saying dispiritedly.&lt;/p&gt;
+&lt;p&gt;Facing Xiao Yan&amp;#8217;s somber mood, Xiao Xun Er&amp;#8217;s fine brows furrowed a little, and she said seriously: &amp;#8220;Brother Xiao Yan, though I don&amp;#8217;t know what&amp;#8217;s happening to you, Xun Er honestly believes that you will stand again and reclaim your lost glory and respect&amp;#8230;&amp;#8221; She stopped for a moment, her white tender face reddening a little. &amp;#8220;Back then, there were a lot of people who were attracted to you&amp;#8230;&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&amp;#8220;Haha&amp;#8230;&amp;#8221; Hearing the girl&amp;#8217;s whole-hearted truth, he laughed awkwardly but didn&amp;#8217;t say anything else. Other people would be swayed by it, but he did not have the qualifications nor the mood. Instead, he silently turned around and walked away from the square.&lt;/p&gt;
+&lt;p&gt;Standing still and facing the lonely back of the youth, she hesitated for a while before chasing after him and walking side-by-side with him. Meanwhile, from behind a jealous wolf whistle sounded(?).&lt;/p&gt;
+&lt;div class="footnotes"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn-130-1"&gt;
+ 斗之力, which is the internal fighting energy or qi that wuxia often refer to. See http://en.wikipedia.org/wiki/Qi for more information.&amp;#160;&lt;a href="#fnref-130-1" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id="fn-130-2"&gt;
+ 乌坦城, the city&amp;#8217;s name.&amp;#160;&lt;a href="#fnref-130-2" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id="fn-130-3"&gt;
+ 斗者, a fighter who has condensed their 10 stages of Dou Zhi Li, this is one of the ranks in the hierarchy of DPCQ.&amp;#160;&lt;a href="#fnref-130-3" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id="fn-130-4"&gt;
+ 斗之气旋, which is the &amp;#8216;channels&amp;#8217; that the qi flows in, I think.&amp;#160;&lt;a href="#fnref-130-4" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id="fn-130-5"&gt;
+ 斗气之旋, not sure why the wording is changed.&amp;#160;&lt;a href="#fnref-130-5" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id="fn-130-6"&gt;
+She refers to herself in 3rd person.&amp;#160;&lt;a href="#fnref-130-6" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id="fn-130-7"&gt;
+ 要能放下，才能拿起，提放自如，是自在人 is an important quote that came from the author of DPCQ that has started gaining a little fame.&amp;#160;&lt;a href="#fnref-130-7" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,42 @@
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.csprojResolveAssemblyReference.cache
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.Properties.Resources.resources
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.csproj.GenerateResource.Cache
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\BookScraperCA.exe.config
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\BookScraperCA.exe
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\BookScraperCA.pdb
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\HtmlAgilityPack.dll
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\Logging.dll
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\WebScraper.dll
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\WebScraper.pdb
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\HtmlAgilityPack.xml
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.exe
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\BookScraperCA.exe.config
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\BookScraperCA.exe
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\BookScraperCA.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\Logging.dll
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\WebScraper.dll
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\WebScraper.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.csprojResolveAssemblyReference.cache
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.Properties.Resources.resources
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.csproj.GenerateResource.Cache
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.exe
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.pdb
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\BookScraperCA.exe.config
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\BookScraperCA.exe
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\BookScraperCA.pdb
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\HtmlAgilityPack.dll
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\Logging.dll
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\WebScraper.dll
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\WebScraper.pdb
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\bin\Debug\HtmlAgilityPack.xml
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.Properties.Resources.resources
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.csproj.GenerateResource.Cache
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.exe
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.pdb
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\BookScraperCA\obj\Debug\BookScraperCA.csprojResolveAssemblyReference.cache

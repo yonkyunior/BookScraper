@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChapterText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChapterTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChapterTextResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChapter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChapterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChapterResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChaptersByBook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bookID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChaptersByBookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChaptersByBookResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getBook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBookResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSourceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSources">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSourcesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBooks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBooksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBooksResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChapters">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChaptersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChaptersResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBooksBySource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sourceID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBooksBySourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBooksBySourceResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChapterslst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getChapterslstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChapterslstResult" type="tns:ArrayOfChapter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfChapter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Chapter" nillable="true" type="tns:Chapter" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Chapter">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ChapterID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChapterName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChapterText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChapterHtml" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChapterAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PreviousChapterID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BookID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getChapterslstByBook">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="tns:Book" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Book">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BookID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BookName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BookIndexAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NextChapterAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PreviousChapterAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Chapters" type="tns:ArrayOfChapter" />
+          <s:element minOccurs="1" maxOccurs="1" name="SourceID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getChapterslstByBookResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getChapterslstByBookResult" type="tns:ArrayOfChapter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSourceslst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSourceslstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSourceslstResult" type="tns:ArrayOfSource" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSource">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Source" nillable="true" type="tns:Source" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Source">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SourceID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SourceName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SourceAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Books" type="tns:ArrayOfBook" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBook">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Book" nillable="true" type="tns:Book" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getBookslst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBookslstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBookslstResult" type="tns:ArrayOfBook" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateTokenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tokenExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tokenExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tokenExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExistingToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExistingTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExistingTokenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTokenID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTokenIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getTokenIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBookMark">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bookID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBookMarkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getBookMarkResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteBookMark">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chapterID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bookID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteBookMarkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WriteBookMarkResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookmarkExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chapterID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bookID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookmarkExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bookmarkExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveChapter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="chapter" type="tns:Chapter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveChapterResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPreviousChapterID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PreviousChapterAddress" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BookID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPreviousChapterIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPreviousChapterIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OverwriteChapter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="tns:Chapter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OverwriteChapterResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertChapter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="tns:Chapter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertChapterResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChapterExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ChapterAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChapterExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ChapterExistsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBookIndex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="tns:Book" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBookIndexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBookIndexResult" type="tns:Book" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBookIndexAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBookIndexAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBookIndexAddressResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastChapter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bookID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastChapterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLastChapterResult" type="tns:Chapter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChapterAlreadyExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChapterAlreadyExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ChapterAlreadyExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddSoapIn">
+    <wsdl:part name="parameters" element="tns:Add" />
+  </wsdl:message>
+  <wsdl:message name="AddSoapOut">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="getChapterTextSoapIn">
+    <wsdl:part name="parameters" element="tns:getChapterText" />
+  </wsdl:message>
+  <wsdl:message name="getChapterTextSoapOut">
+    <wsdl:part name="parameters" element="tns:getChapterTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="getChapterSoapIn">
+    <wsdl:part name="parameters" element="tns:getChapter" />
+  </wsdl:message>
+  <wsdl:message name="getChapterSoapOut">
+    <wsdl:part name="parameters" element="tns:getChapterResponse" />
+  </wsdl:message>
+  <wsdl:message name="getChaptersByBookSoapIn">
+    <wsdl:part name="parameters" element="tns:getChaptersByBook" />
+  </wsdl:message>
+  <wsdl:message name="getChaptersByBookSoapOut">
+    <wsdl:part name="parameters" element="tns:getChaptersByBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBookSoapIn">
+    <wsdl:part name="parameters" element="tns:getBook" />
+  </wsdl:message>
+  <wsdl:message name="getBookSoapOut">
+    <wsdl:part name="parameters" element="tns:getBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSourceSoapIn">
+    <wsdl:part name="parameters" element="tns:getSource" />
+  </wsdl:message>
+  <wsdl:message name="getSourceSoapOut">
+    <wsdl:part name="parameters" element="tns:getSourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:getSources" />
+  </wsdl:message>
+  <wsdl:message name="getSourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:getSourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBooksSoapIn">
+    <wsdl:part name="parameters" element="tns:getBooks" />
+  </wsdl:message>
+  <wsdl:message name="getBooksSoapOut">
+    <wsdl:part name="parameters" element="tns:getBooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="getChaptersSoapIn">
+    <wsdl:part name="parameters" element="tns:getChapters" />
+  </wsdl:message>
+  <wsdl:message name="getChaptersSoapOut">
+    <wsdl:part name="parameters" element="tns:getChaptersResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBooksBySourceSoapIn">
+    <wsdl:part name="parameters" element="tns:getBooksBySource" />
+  </wsdl:message>
+  <wsdl:message name="getBooksBySourceSoapOut">
+    <wsdl:part name="parameters" element="tns:getBooksBySourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="getChapterslstSoapIn">
+    <wsdl:part name="parameters" element="tns:getChapterslst" />
+  </wsdl:message>
+  <wsdl:message name="getChapterslstSoapOut">
+    <wsdl:part name="parameters" element="tns:getChapterslstResponse" />
+  </wsdl:message>
+  <wsdl:message name="getChapterslstByBookSoapIn">
+    <wsdl:part name="parameters" element="tns:getChapterslstByBook" />
+  </wsdl:message>
+  <wsdl:message name="getChapterslstByBookSoapOut">
+    <wsdl:part name="parameters" element="tns:getChapterslstByBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSourceslstSoapIn">
+    <wsdl:part name="parameters" element="tns:getSourceslst" />
+  </wsdl:message>
+  <wsdl:message name="getSourceslstSoapOut">
+    <wsdl:part name="parameters" element="tns:getSourceslstResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBookslstSoapIn">
+    <wsdl:part name="parameters" element="tns:getBookslst" />
+  </wsdl:message>
+  <wsdl:message name="getBookslstSoapOut">
+    <wsdl:part name="parameters" element="tns:getBookslstResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateToken" />
+  </wsdl:message>
+  <wsdl:message name="GenerateTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="tokenExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:tokenExists" />
+  </wsdl:message>
+  <wsdl:message name="tokenExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:tokenExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExistingTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExistingToken" />
+  </wsdl:message>
+  <wsdl:message name="GetExistingTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExistingTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTokenIDSoapIn">
+    <wsdl:part name="parameters" element="tns:getTokenID" />
+  </wsdl:message>
+  <wsdl:message name="getTokenIDSoapOut">
+    <wsdl:part name="parameters" element="tns:getTokenIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBookMarkSoapIn">
+    <wsdl:part name="parameters" element="tns:getBookMark" />
+  </wsdl:message>
+  <wsdl:message name="getBookMarkSoapOut">
+    <wsdl:part name="parameters" element="tns:getBookMarkResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteBookMarkSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteBookMark" />
+  </wsdl:message>
+  <wsdl:message name="WriteBookMarkSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteBookMarkResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookmarkExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:bookmarkExists" />
+  </wsdl:message>
+  <wsdl:message name="bookmarkExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:bookmarkExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveChapterSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveChapter" />
+  </wsdl:message>
+  <wsdl:message name="SaveChapterSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveChapterResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPreviousChapterIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPreviousChapterID" />
+  </wsdl:message>
+  <wsdl:message name="GetPreviousChapterIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPreviousChapterIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="OverwriteChapterSoapIn">
+    <wsdl:part name="parameters" element="tns:OverwriteChapter" />
+  </wsdl:message>
+  <wsdl:message name="OverwriteChapterSoapOut">
+    <wsdl:part name="parameters" element="tns:OverwriteChapterResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertChapterSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertChapter" />
+  </wsdl:message>
+  <wsdl:message name="InsertChapterSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertChapterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChapterExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:ChapterExists" />
+  </wsdl:message>
+  <wsdl:message name="ChapterExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:ChapterExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBookIndexSoapIn">
+    <wsdl:part name="parameters" element="tns:getBookIndex" />
+  </wsdl:message>
+  <wsdl:message name="getBookIndexSoapOut">
+    <wsdl:part name="parameters" element="tns:getBookIndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBookIndexAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:getBookIndexAddress" />
+  </wsdl:message>
+  <wsdl:message name="getBookIndexAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:getBookIndexAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastChapterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastChapter" />
+  </wsdl:message>
+  <wsdl:message name="GetLastChapterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastChapterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChapterAlreadyExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:ChapterAlreadyExists" />
+  </wsdl:message>
+  <wsdl:message name="ChapterAlreadyExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:ChapterAlreadyExistsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ReaderServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <wsdl:input message="tns:AddSoapIn" />
+      <wsdl:output message="tns:AddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChapterText">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the ChapterText by ChapterID {id}</wsdl:documentation>
+      <wsdl:input message="tns:getChapterTextSoapIn" />
+      <wsdl:output message="tns:getChapterTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChapter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the ChapterName by ChapterID {id}</wsdl:documentation>
+      <wsdl:input message="tns:getChapterSoapIn" />
+      <wsdl:output message="tns:getChapterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChaptersByBook">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all ChapterName's by BookID {bookID}</wsdl:documentation>
+      <wsdl:input message="tns:getChaptersByBookSoapIn" />
+      <wsdl:output message="tns:getChaptersByBookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBook">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the BookName by BookID {ID}</wsdl:documentation>
+      <wsdl:input message="tns:getBookSoapIn" />
+      <wsdl:output message="tns:getBookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSource">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the SourceName by SourceID {ID}</wsdl:documentation>
+      <wsdl:input message="tns:getSourceSoapIn" />
+      <wsdl:output message="tns:getSourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSources">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns All SourceName's</wsdl:documentation>
+      <wsdl:input message="tns:getSourcesSoapIn" />
+      <wsdl:output message="tns:getSourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBooks">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all BookName's</wsdl:documentation>
+      <wsdl:input message="tns:getBooksSoapIn" />
+      <wsdl:output message="tns:getBooksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChapters">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all ChapterName's</wsdl:documentation>
+      <wsdl:input message="tns:getChaptersSoapIn" />
+      <wsdl:output message="tns:getChaptersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBooksBySource">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all BookName's by SourceID {sourceID}</wsdl:documentation>
+      <wsdl:input message="tns:getBooksBySourceSoapIn" />
+      <wsdl:output message="tns:getBooksBySourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChapterslst">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns details about all Chapters</wsdl:documentation>
+      <wsdl:input message="tns:getChapterslstSoapIn" />
+      <wsdl:output message="tns:getChapterslstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getChapterslstByBook">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns details about all Chapters</wsdl:documentation>
+      <wsdl:input message="tns:getChapterslstByBookSoapIn" />
+      <wsdl:output message="tns:getChapterslstByBookSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSourceslst">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns details about all Sources</wsdl:documentation>
+      <wsdl:input message="tns:getSourceslstSoapIn" />
+      <wsdl:output message="tns:getSourceslstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBookslst">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns details about all Books</wsdl:documentation>
+      <wsdl:input message="tns:getBookslstSoapIn" />
+      <wsdl:output message="tns:getBookslstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateToken">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">checks login credentials if valid, generates a unique Token, logs the token and retuns it to the user</wsdl:documentation>
+      <wsdl:input message="tns:GenerateTokenSoapIn" />
+      <wsdl:output message="tns:GenerateTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tokenExists">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Checks if a token exists in database</wsdl:documentation>
+      <wsdl:input message="tns:tokenExistsSoapIn" />
+      <wsdl:output message="tns:tokenExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingToken">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets an already Generated Token by Username</wsdl:documentation>
+      <wsdl:input message="tns:GetExistingTokenSoapIn" />
+      <wsdl:output message="tns:GetExistingTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTokenID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the ID of a given Token</wsdl:documentation>
+      <wsdl:input message="tns:getTokenIDSoapIn" />
+      <wsdl:output message="tns:getTokenIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBookMark">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a chapterID for a given book</wsdl:documentation>
+      <wsdl:input message="tns:getBookMarkSoapIn" />
+      <wsdl:output message="tns:getBookMarkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteBookMark">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Writes a BookMark by Token ID, BookID, and ChapterID</wsdl:documentation>
+      <wsdl:input message="tns:WriteBookMarkSoapIn" />
+      <wsdl:output message="tns:WriteBookMarkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookmarkExists">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Checks Whether a BookMark Already exists</wsdl:documentation>
+      <wsdl:input message="tns:bookmarkExistsSoapIn" />
+      <wsdl:output message="tns:bookmarkExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveChapter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Saves a Chapter to server</wsdl:documentation>
+      <wsdl:input message="tns:SaveChapterSoapIn" />
+      <wsdl:output message="tns:SaveChapterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviousChapterID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the previousChapterID</wsdl:documentation>
+      <wsdl:input message="tns:GetPreviousChapterIDSoapIn" />
+      <wsdl:output message="tns:GetPreviousChapterIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OverwriteChapter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Overwrites an existing chapter</wsdl:documentation>
+      <wsdl:input message="tns:OverwriteChapterSoapIn" />
+      <wsdl:output message="tns:OverwriteChapterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertChapter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">inserts a new Chapter</wsdl:documentation>
+      <wsdl:input message="tns:InsertChapterSoapIn" />
+      <wsdl:output message="tns:InsertChapterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChapterExists">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Checks Whether Chpater Already Exists</wsdl:documentation>
+      <wsdl:input message="tns:ChapterExistsSoapIn" />
+      <wsdl:output message="tns:ChapterExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBookIndex">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets a BooksIndex Address as a Book Object</wsdl:documentation>
+      <wsdl:input message="tns:getBookIndexSoapIn" />
+      <wsdl:output message="tns:getBookIndexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getBookIndexAddress">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets A books Index Address as a string</wsdl:documentation>
+      <wsdl:input message="tns:getBookIndexAddressSoapIn" />
+      <wsdl:output message="tns:getBookIndexAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastChapter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Last Chapter of a book</wsdl:documentation>
+      <wsdl:input message="tns:GetLastChapterSoapIn" />
+      <wsdl:output message="tns:GetLastChapterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChapterAlreadyExists">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">checks that a chapter exists by its address</wsdl:documentation>
+      <wsdl:input message="tns:ChapterAlreadyExistsSoapIn" />
+      <wsdl:output message="tns:ChapterAlreadyExistsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReaderServiceSoap" type="tns:ReaderServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="http://tempuri.org/Add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapterText">
+      <soap:operation soapAction="http://tempuri.org/getChapterText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapter">
+      <soap:operation soapAction="http://tempuri.org/getChapter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChaptersByBook">
+      <soap:operation soapAction="http://tempuri.org/getChaptersByBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBook">
+      <soap:operation soapAction="http://tempuri.org/getBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSource">
+      <soap:operation soapAction="http://tempuri.org/getSource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSources">
+      <soap:operation soapAction="http://tempuri.org/getSources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBooks">
+      <soap:operation soapAction="http://tempuri.org/getBooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapters">
+      <soap:operation soapAction="http://tempuri.org/getChapters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBooksBySource">
+      <soap:operation soapAction="http://tempuri.org/getBooksBySource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapterslst">
+      <soap:operation soapAction="http://tempuri.org/getChapterslst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapterslstByBook">
+      <soap:operation soapAction="http://tempuri.org/getChapterslstByBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSourceslst">
+      <soap:operation soapAction="http://tempuri.org/getSourceslst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookslst">
+      <soap:operation soapAction="http://tempuri.org/getBookslst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateToken">
+      <soap:operation soapAction="http://tempuri.org/GenerateToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tokenExists">
+      <soap:operation soapAction="http://tempuri.org/tokenExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingToken">
+      <soap:operation soapAction="http://tempuri.org/GetExistingToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTokenID">
+      <soap:operation soapAction="http://tempuri.org/getTokenID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookMark">
+      <soap:operation soapAction="http://tempuri.org/getBookMark" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteBookMark">
+      <soap:operation soapAction="http://tempuri.org/WriteBookMark" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookmarkExists">
+      <soap:operation soapAction="http://tempuri.org/bookmarkExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveChapter">
+      <soap:operation soapAction="http://tempuri.org/SaveChapter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviousChapterID">
+      <soap:operation soapAction="http://tempuri.org/GetPreviousChapterID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OverwriteChapter">
+      <soap:operation soapAction="http://tempuri.org/OverwriteChapter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertChapter">
+      <soap:operation soapAction="http://tempuri.org/InsertChapter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChapterExists">
+      <soap:operation soapAction="http://tempuri.org/ChapterExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookIndex">
+      <soap:operation soapAction="http://tempuri.org/getBookIndex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookIndexAddress">
+      <soap:operation soapAction="http://tempuri.org/getBookIndexAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastChapter">
+      <soap:operation soapAction="http://tempuri.org/GetLastChapter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChapterAlreadyExists">
+      <soap:operation soapAction="http://tempuri.org/ChapterAlreadyExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ReaderServiceSoap12" type="tns:ReaderServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <soap12:operation soapAction="http://tempuri.org/Add" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapterText">
+      <soap12:operation soapAction="http://tempuri.org/getChapterText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapter">
+      <soap12:operation soapAction="http://tempuri.org/getChapter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChaptersByBook">
+      <soap12:operation soapAction="http://tempuri.org/getChaptersByBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBook">
+      <soap12:operation soapAction="http://tempuri.org/getBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSource">
+      <soap12:operation soapAction="http://tempuri.org/getSource" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSources">
+      <soap12:operation soapAction="http://tempuri.org/getSources" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBooks">
+      <soap12:operation soapAction="http://tempuri.org/getBooks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapters">
+      <soap12:operation soapAction="http://tempuri.org/getChapters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBooksBySource">
+      <soap12:operation soapAction="http://tempuri.org/getBooksBySource" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapterslst">
+      <soap12:operation soapAction="http://tempuri.org/getChapterslst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChapterslstByBook">
+      <soap12:operation soapAction="http://tempuri.org/getChapterslstByBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSourceslst">
+      <soap12:operation soapAction="http://tempuri.org/getSourceslst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookslst">
+      <soap12:operation soapAction="http://tempuri.org/getBookslst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateToken">
+      <soap12:operation soapAction="http://tempuri.org/GenerateToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tokenExists">
+      <soap12:operation soapAction="http://tempuri.org/tokenExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExistingToken">
+      <soap12:operation soapAction="http://tempuri.org/GetExistingToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTokenID">
+      <soap12:operation soapAction="http://tempuri.org/getTokenID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookMark">
+      <soap12:operation soapAction="http://tempuri.org/getBookMark" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteBookMark">
+      <soap12:operation soapAction="http://tempuri.org/WriteBookMark" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookmarkExists">
+      <soap12:operation soapAction="http://tempuri.org/bookmarkExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveChapter">
+      <soap12:operation soapAction="http://tempuri.org/SaveChapter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviousChapterID">
+      <soap12:operation soapAction="http://tempuri.org/GetPreviousChapterID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OverwriteChapter">
+      <soap12:operation soapAction="http://tempuri.org/OverwriteChapter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertChapter">
+      <soap12:operation soapAction="http://tempuri.org/InsertChapter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChapterExists">
+      <soap12:operation soapAction="http://tempuri.org/ChapterExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookIndex">
+      <soap12:operation soapAction="http://tempuri.org/getBookIndex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookIndexAddress">
+      <soap12:operation soapAction="http://tempuri.org/getBookIndexAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastChapter">
+      <soap12:operation soapAction="http://tempuri.org/GetLastChapter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChapterAlreadyExists">
+      <soap12:operation soapAction="http://tempuri.org/ChapterAlreadyExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ReaderService">
+    <wsdl:port name="ReaderServiceSoap" binding="tns:ReaderServiceSoap">
+      <soap:address location="https://faust.world/Reader/ReaderService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ReaderServiceSoap12" binding="tns:ReaderServiceSoap12">
+      <soap12:address location="https://faust.world/Reader/ReaderService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

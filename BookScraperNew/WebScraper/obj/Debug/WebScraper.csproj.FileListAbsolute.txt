@@ -1,0 +1,42 @@
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\WebScraper.dll
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\WebScraper.pdb
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\HtmlAgilityPack.dll
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\jd\Desktop\BookScraper\WebScraper\bin\Debug\HtmlAgilityPack.xml
+C:\Users\jd\Desktop\BookScraper\WebScraper\obj\Debug\WebScraper.dll
+C:\Users\jd\Desktop\BookScraper\WebScraper\obj\Debug\WebScraper.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperOld\WebScraper\bin\Debug\WebScraper.dll
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperOld\WebScraper\bin\Debug\WebScraper.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperOld\WebScraper\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperOld\WebScraper\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperOld\WebScraper\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperOld\WebScraper\obj\Debug\WebScraper.csprojResolveAssemblyReference.cache
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperOld\WebScraper\obj\Debug\WebScraper.dll
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperOld\WebScraper\obj\Debug\WebScraper.pdb
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\WebScraper\obj\Debug\WebScraper.csprojResolveAssemblyReference.cache
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\WebScraper\bin\Debug\WebScraper.dll.config
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\WebScraper\bin\Debug\WebScraper.dll
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\WebScraper\bin\Debug\WebScraper.pdb
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\WebScraper\bin\Debug\HtmlAgilityPack.dll
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\WebScraper\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\WebScraper\bin\Debug\HtmlAgilityPack.xml
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\WebScraper\obj\Debug\WebScraper.dll
+C:\Users\jd\Desktop\JD\BookScraper\BookScraperNew\WebScraper\obj\Debug\WebScraper.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\WebScraper.dll.config
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\WebScraper.dll
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\WebScraper.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\WebScraper\obj\Debug\WebScraper.csprojResolveAssemblyReference.cache
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\WebScraper\obj\Debug\WebScraper.dll
+C:\Users\Personal Projects\Desktop\BookScraper\BookScraperNew\WebScraper\obj\Debug\WebScraper.pdb
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\WebScraper.dll.config
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\WebScraper.dll
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\WebScraper.pdb
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\HtmlAgilityPack.dll
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\WebScraper\bin\Debug\HtmlAgilityPack.xml
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\WebScraper\obj\Debug\WebScraper.csprojResolveAssemblyReference.cache
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\WebScraper\obj\Debug\WebScraper.dll
+C:\Users\jd\Desktop\BookScraper\BookScraperNew\WebScraper\obj\Debug\WebScraper.pdb
